@@ -1,0 +1,133 @@
+{
+  "version": "2",
+  "templates": [
+    {
+	  "type": 1,
+	  "title": "Draw.io",
+	  "name": "drawio",
+	  "description": "Online Flowchart Maker",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "image": "jgraph/drawio",
+	  "ports": [
+        "10010:8080/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux"
+	},
+	{
+	  "type": 1,
+	  "title": "NGINX",
+	  "name": "NGINX_Proxy_Manger",
+	  "description": "Reverse Proxy",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
+	  "image": "jc21/nginx-proxy-manager:latest",
+	  "ports": [
+        "80:80/tcp",
+        "81:81/tcp",
+        "443:443/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux",
+      "volumes": [
+        {
+        "container": "/data"
+        },
+        {
+        "container": "/etc/letsencrypt"
+        }
+      ]
+	},
+	{
+	  "type": 1,
+	  "title": "Baikal",
+	  "name": "Baikal",
+	  "description": "CalDAV+CardDAV Server",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "image": "ckulka/baikal:nginx",
+	  "ports": [
+        "10011:80/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux",
+      "volumes": [
+        {
+        "container": "/var/www/baikal/config"
+        },
+        {
+        "container": "/var/www/baikal/Specific"
+        }
+      ]
+	},
+	{
+	  "type": 1,
+	  "title": "Bitwarden",
+	  "name": "Bitwarden",
+	  "description": "Bitwarden/Vaultwarden Password Safe",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "image": "vaultwarden/server:latest",
+	  "ports": [
+        "10012:80/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux",
+      "volumes": [
+        {
+        "container": "/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "ADMIN_TOKEN",
+          "label": "ADMIN_TOKEN",
+          "default": "INSERT_TOKEN_HERE"
+        }
+      ]
+	},
+	{
+	  "type": 1,
+	  "title": "Stirling PDF",
+	  "name": "Stirling",
+	  "description": "Online PDF Multitool",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "image": "frooodle/s-pdf:latest",
+	  "ports": [
+        "10013:8080/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux",
+      "volumes": [
+        {
+        "container": "/configs"
+        },
+        {
+        "container": "/usr/share/tesseract-ocr/4.00/tessdata"
+        }
+      ],
+      "env": [
+        {
+          "name": "LANGUAGE",
+          "label": "LANGUAGE",
+          "default": "de_DE"
+        }
+      ]
+	},
+	{
+	  "type": 1,
+	  "title": "Uptime Kuma",
+	  "name": "Uptime-Kuma",
+	  "description": "Uptime checker tool",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "image": "jlouislam/uptime-kuma:latest",
+	  "ports": [
+        "10014:3001/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux",
+      "volumes": [
+        {
+        "container": "/app/data"
+        }
+      ]
+	}
+  ]
+}
