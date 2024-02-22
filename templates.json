@@ -128,6 +128,17 @@
         "container": "/app/data"
         }
       ]
+	},
+	{
+	  "type": 3,
+	  "title": "shlink-mariadb",
+	  "name": "Shlink",
+	  "description": "Shlink Link shortener with MariaDB",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "repository": {
+	      "url": "https://github.com/schulzrobin/portainer_templates",
+	      "stackfile": "stacks/shlink-mariadb/docker-stack.yml"
+	  }
 	}
   ]
 }
