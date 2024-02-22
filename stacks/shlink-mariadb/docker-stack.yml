@@ -17,7 +17,7 @@ services:
     depends_on:
       - database
     ports:
-      - 10.10.10.10:10300:8080
+      - 10.10.10.10:10015:8080
 
   database:
     image: mariadb:latest
@@ -32,3 +32,5 @@ services:
 
   shlink-web-client:
     image: shlinkio/shlink-web-client
+    ports:
+      - 10.10.10.10:10016:80
