@@ -8,11 +8,11 @@ services:
       - TZ="Europe/Zurich"
       - DEFAULT_DOMAIN=l.robn.ch
       - IS_HTTPS_ENABLED=true
-      - GEOLITE_LICENSE_KEY=KEY
+      - GEOLITE_LICENSE_KEY=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
       - DB_DRIVER=maria
       - DB_USER=shlink
       - DB_NAME=shlink
-      - DB_PASSWORD=PASSWORD
+      - DB_PASSWORD=6tgG@A#AMJsk94
       - DB_HOST=database
     depends_on:
       - database
@@ -23,15 +23,16 @@ services:
     image: mariadb:latest
     restart: always
     environment:
-      - MARIADB_ROOT_PASSWORD=PASSWORD
+      - MARIADB_ROOT_PASSWORD=N4E9!fc^r$Vofe
       - MARIADB_DATABASE=shlink
       - MARIADB_USER=shlink
-      - MARIADB_PASSWORD=PASSWORD
+      - MARIADB_PASSWORD=6tgG@A#AMJsk94
     volumes:
       - /var/lib/docker/volumes/shlink/db_data:/var/lib/mysql/
 
   shlink-web-client:
     image: shlinkio/shlink-web-client
+    restart: always
     ports:
       - 10.10.10.10:10031:80
 
