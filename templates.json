@@ -139,6 +139,19 @@
 	      "url": "https://github.com/schulzrobin/portainer_templates",
 	      "stackfile": "stacks/shlink-mariadb/docker-stack.yml"
 	  }
+	},
+	{
+	  "type": 1,
+	  "title": "scribble",
+	  "name": "Scribble",
+	  "description": "Online Multiplayer Draw game",
+	  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+	  "image": "biosmarcel/scribble.rs:latest",
+	  "ports": [
+        	"10014:3001/tcp"
+      		],
+	  "restart_policy": "always",
+          "platform": "linux"
 	}
   ]
 }
