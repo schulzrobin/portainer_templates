@@ -140,5 +140,6 @@
 	      "stackfile": "stacks/shlink-mariadb/docker-stack.yml"
 	  }
 	}
+	  }
   ]
 }
