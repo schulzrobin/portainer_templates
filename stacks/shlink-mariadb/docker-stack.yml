@@ -34,3 +34,10 @@ services:
     image: shlinkio/shlink-web-client
     ports:
       - 10.10.10.10:10031:80
+
+  volumes: [
+        {
+          "bind": "/var/lib/docker/volumes/shlink/servers_json",
+          "container": "/usr/share/nginx/html/conf.d"
+        }
+      ]  
