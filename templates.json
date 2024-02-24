@@ -97,10 +97,12 @@
       "platform": "linux",
       "volumes": [
         {
-          "container": "/configs"
+          "container": "/configs",
+          "bind": "/var/lib/docker/volumes/stirling_extraConfigs/_data"
         },
         {
-          "container": "/usr/share/tesseract-ocr/4.00/tessdata"
+          "container": "/usr/share/tesseract-ocr/4.00/tessdata",
+          "bind": "/var/lib/docker/volumes/stirling_trainingData/_data"
         }
       ],
       "env": [
