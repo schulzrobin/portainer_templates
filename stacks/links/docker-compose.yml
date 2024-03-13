@@ -1,0 +1,37 @@
+---
+# this is used for local development and testing
+version: "3.0"
+services:
+  little-link:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    #image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - META_TITLE=Robin Schulz
+      - META_AUTHOR=Robin Schulz
+      - META_KEYWORDS=Smarthome, Electronic Engineering IT-specialist      
+      - LANG=de
+      - META_INDEX_STATUS=all
+      - THEME=Dark
+      - FAVICON_URL=https://.jpg
+      - AVATAR_URL=https://.jpg
+      - AVATAR_2X_URL=https://.jpg
+      - AVATAR_ALT=
+      - NAME=Robin Schulz
+      - BIO=
+      - FOOTER=Thanks for stopping by!
+      - GITHUB=https://l.robn.ch/github
+      - INSTAGRAM=https://l.robn.ch/instagram
+      - YOUTUBE=https://l.robn.ch/youtube
+      - FACEBOOK=https://l.robn.ch/facebook
+      - LINKED_IN=https://l.robn.ch/linkedin
+      - DOCKERHUB=https://hub.docker.com/
+    ports:
+      - 10020:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
