@@ -170,6 +170,5 @@
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/links/docker-stack.yml"
       }
-    }
   ]
 }
