@@ -13,7 +13,7 @@ services:
     environment:
       - META_TITLE=Robin Schulz
       - META_AUTHOR=Robin Schulz
-      - META_KEYWORDS=Smarthome, Electronic Engineering IT-specialist      
+      - META_KEYWORDS=Smarthome, Electronic Engineering, IT-specialist, 3D-Printing      
       - LANG=de
       - META_INDEX_STATUS=all
       - THEME=Dark
@@ -29,7 +29,8 @@ services:
       - YOUTUBE=https://l.robn.ch/youtube
       - FACEBOOK=https://l.robn.ch/facebook
       - LINKED_IN=https://l.robn.ch/linkedin
-      - DOCKERHUB=https://hub.docker.com/
+      - DOCKERHUB=https://l.robn.ch/docker
+      - PRINTABLES=https://l.robn.ch/printables
     ports:
       - 10016:3000
     restart: unless-stopped
