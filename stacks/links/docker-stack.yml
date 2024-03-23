@@ -34,7 +34,8 @@ services:
       - CUSTOM_BUTTON_URL=https://robn.ch/pdftools,https://robn.ch/draw,https://robn.ch/bitwarden
       - CUSTOM_BUTTON_COLOR=#eb4034,#eb4034,#eb4034
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff,#ffffff
-      - CUSTOM_BUTTON_NAME=PDF Tools,Flow Chart Maker,Bitwarden    
+      - CUSTOM_BUTTON_NAME=PDF Tools,Flow Chart Maker,Bitwarden
+      - SKIP_HEALTH_CHECK_LOGS=true
     ports:
       - 10016:3000
     restart: always
