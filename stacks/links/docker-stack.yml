@@ -30,6 +30,11 @@ services:
       - DOCKERHUB=https://robn.ch/docker
       - PRINTABLES=https://robn.ch/printables
       - PAYPAL=https://robn.ch/paypal
+      - CUSTOM_BUTTON_TEXT=PDF Tools,Flow Chat,Bitwarden
+      - CUSTOM_BUTTON_URL=https://robn.ch/pdftools,https://robn.ch/draw,https://robn.ch/bitwarden
+      - CUSTOM_BUTTON_COLOR=#eb4034,#eb4034,#eb4034
+- CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff,#ffffff
+      - CUSTOM_BUTTON_NAME=PDF Tools,Flow Chart Maker,Bitwarden    
     ports:
       - 10016:3000
     restart: always
