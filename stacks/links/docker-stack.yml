@@ -15,12 +15,12 @@ services:
       - LANG=de
       - META_INDEX_STATUS=all
       - THEME=Dark
-     // - FAVICON_URL=https://.jpg
-    //  - AVATAR_URL=https://.jpg
-     // - AVATAR_2X_URL=https://.jpg
-     // - AVATAR_ALT=
+     # - FAVICON_URL=https://.jpg
+     #  - AVATAR_URL=https://.jpg
+     # - AVATAR_2X_URL=https://.jpg
+     # - AVATAR_ALT=
       - NAME=Robin Schulz
-      - BIO=
+      - BIO=Connect with me
       - FOOTER=© Robin Schulz 2024
       - GITHUB=https://robn.ch/github
       - INSTAGRAM=https://robn.ch/instagram
