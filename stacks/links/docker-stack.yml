@@ -22,7 +22,7 @@ services:
       - PAYPAL=https://robn.ch/paypal
       - BUTTON_TARGET=_blank
       - CUSTOM_BUTTON_TEXT=PDF Tools
-      - CUSTOM_BUTTON_URL=https://robn.ch/pdf
+      - CUSTOM_BUTTON_URL=robn.ch/pdf
       - CUSTOM_BUTTON_COLOR=#eb4034
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff
       - CUSTOM_BUTTON_NAME=PDF Tools
