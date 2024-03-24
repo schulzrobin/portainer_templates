@@ -133,6 +133,7 @@
       "volumes": [
         {
           "container": "/app/data"
+          "bind": "/var/lib/docker/volumes/uptimekuma_data"
         }
       ]
     },
