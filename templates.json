@@ -124,7 +124,7 @@
       "name": "Uptime-Kuma",
       "description": "Uptime checker tool",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-      "image": "jlouislam/uptime-kuma",
+      "image": "louislam/uptime-kuma:1",
       "ports": [
         "10014:3001/tcp"
       ],
