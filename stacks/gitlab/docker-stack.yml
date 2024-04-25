@@ -10,7 +10,7 @@ services:
         # Add any other gitlab.rb configuration here, each on its own line
         external_url 'https://gitlab.robin-schulz.ch'
     ports:
-      - '10017:443'
+      - '10017:80'
     volumes:
       - '/var/lib/docker/volumes/gitlab/config:/etc/gitlab'
       - '/var/lib/docker/volumes/gitlab/logs:/var/log/gitlab'
