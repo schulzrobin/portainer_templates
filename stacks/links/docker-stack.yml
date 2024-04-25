@@ -20,7 +20,6 @@ services:
       - DOCKERHUB=https://robn.ch/docker
       - PRINTABLES=https://robn.ch/printables
       - PAYPAL=https://robn.ch/paypal
-      - BUTTON_TARGET=_blank
       - CUSTOM_BUTTON_TEXT=PDF Tools
       - CUSTOM_BUTTON_URL=robn.ch/pdf
       - CUSTOM_BUTTON_COLOR=#eb4034
