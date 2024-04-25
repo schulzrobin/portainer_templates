@@ -171,6 +171,17 @@
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/links/docker-stack.yml"
       }
+    },
+    {
+      "type": 3,
+      "title": "gitlab",
+      "name": "GitLab",
+      "description": "GitLab Software Repository",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+      "repository": {
+        "url": "https://github.com/schulzrobin/portainer_templates",
+        "stackfile": "stacks/gitlab/docker-stack.yml"
+      }
     }
   ]
 }
