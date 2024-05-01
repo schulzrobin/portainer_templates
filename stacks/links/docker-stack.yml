@@ -25,7 +25,9 @@ services:
       - CUSTOM_BUTTON_URL=robn.ch/pdf
       - CUSTOM_BUTTON_COLOR=#eb4034
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=Online PDF Tools
       - CUSTOM_BUTTON_NAME=PDF Tools
+      - CUSTOM_BUTTON_ICON=fas file-alt
       - FOOTER=Robin Schulz © 2024
       - SKIP_HEALTH_CHECK_LOGS=true
     ports:
