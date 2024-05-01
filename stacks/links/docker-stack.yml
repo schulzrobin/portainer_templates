@@ -11,7 +11,8 @@ services:
       - LANG=de
       - META_INDEX_STATUS=all
       - THEME=Dark
-      - NAME=Robin Schulz
+      - NAME=Robin Schulz    
+      - BIO=Elektronik | Software | Smarthome | IoT | DIY | IT | 3D-Druck
       - GITHUB=https://robn.ch/github
       - INSTAGRAM=https://robn.ch/instagram
       - YOUTUBE=https://robn.ch/youtube
@@ -25,6 +26,7 @@ services:
       - CUSTOM_BUTTON_COLOR=#eb4034
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff
       - CUSTOM_BUTTON_NAME=PDF Tools
+      - FOOTER=Robin Schulz © 2024
       - SKIP_HEALTH_CHECK_LOGS=true
     ports:
       - 10016:3000
