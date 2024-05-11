@@ -28,7 +28,7 @@ services:
       - MARIADB_USER=shlink
       - MARIADB_PASSWORD=PW
     volumes:
-     - '/var/lib/docker/volumes/shlink/db_data:/var/lib/mysql'
+      - '/var/lib/docker/volumes/shlink/db_data:/var/lib/mysql'
       
   shlink-web-client:
     image: shlinkio/shlink-web-client
