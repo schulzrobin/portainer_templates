@@ -22,12 +22,12 @@ services:
       - DOCKERHUB=https://robn.ch/docker
       - PRINTABLES=https://robn.ch/printables
       - PAYPAL=https://robn.ch/paypal
-      - CUSTOM_BUTTON_TEXT=Self Hosting:,PDF Tools,Draw
+      - CUSTOM_BUTTON_TEXT=Self Hosted:,PDF Tools,Draw
       - CUSTOM_BUTTON_URL=https://#,https://robn.ch/pdf,https://robn.ch/draw
       - CUSTOM_BUTTON_COLOR=#eb4034,#eb4034,#eb4034
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff,#ffffff
-      - CUSTOM_BUTTON_ALT_TEXT=My Self Hosted Services,Online PDF Tools, Online Flowchart Maker
-      - CUSTOM_BUTTON_NAME=Self Hosting,PDF Tools,Draw
+      - CUSTOM_BUTTON_ALT_TEXT=My Self Hosted online Services,Online PDF Tools, Online Flowchart Maker
+      - CUSTOM_BUTTON_NAME=Self Hosted,PDF Tools,Draw
       - CUSTOM_BUTTON_ICON=fas file-alt,fas file-alt, fas chart-pie
       - FOOTER=Robin Schulz © 2024
       - SKIP_HEALTH_CHECK_LOGS=true
