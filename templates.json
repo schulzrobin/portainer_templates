@@ -31,11 +31,11 @@
       "volumes": [
         {
           "container": "/data",
-          "bind": "/var/lib/docker/volumes/nginxpm_data"
+          "bind": "/var/lib/docker/volumes/nginx/data"
         },
         {
           "container": "/etc/letsencrypt",
-          "bind": "/var/lib/docker/volumes/nginx_letsencrypt"
+          "bind": "/var/lib/docker/volumes/nginx/letsencrypt"
         }
       ]
     },
@@ -54,11 +54,11 @@
       "volumes": [
         {
           "container": "/var/www/baikal/config",
-          "bind": "/var/lib/docker/volumes/baikal_config"
+          "bind": "/var/lib/docker/volumes/baikal/config"
         },
         {
           "container": "/var/www/baikal/Specific",
-          "bind": "/var/lib/docker/volumes/baikal_data"
+          "bind": "/var/lib/docker/volumes/baikal/data"
         }
       ]
     },
@@ -77,7 +77,7 @@
       "volumes": [
         {
           "container": "/data",
-          "bind": "/var/lib/docker/volumes/vw-data"
+          "bind": "/var/lib/docker/volumes/bitwarden/data"
         }
       ],
       "env": [
@@ -133,7 +133,7 @@
       "volumes": [
         {
           "container": "/app/data",
-          "bind": "/var/lib/docker/volumes/uptimekuma_data"
+          "bind": "/var/lib/docker/volumes/uptimekuma/data"
         }
       ]
     },
