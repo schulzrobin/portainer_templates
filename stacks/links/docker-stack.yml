@@ -12,7 +12,7 @@ services:
       - META_INDEX_STATUS=all
       - THEME=Dark
       - NAME=Robin Schulz    
-      - BIO=Elektronik | Software | Smarthome | IoT | DIY | IT | 3D-Druck
+      - BIO=Elektronik | Software | Smarthome | IoT | DIY | IT | 3D-Druck | FPV
       - BUTTON_ORDER=GITHUB,INSTAGRAM,YOUTUBE,FACEBOOK,LINKED_IN,DOCKERHUB,PRINTABLES,PAYPAL,STEAM
       - GITHUB=https://robn.ch/github
       - INSTAGRAM=https://robn.ch/instagram
