@@ -13,7 +13,7 @@ services:
       - THEME=Dark
       - NAME=Robin Schulz    
       - BIO=Elektronik | Software | Smarthome | IoT | DIY | IT | 3D-Druck
-      - BUTTON_ORDER=GITHUB,INSTAGRAM,YOUTUBE,FACEBOOK,LINKED_IN,DOCKERHUB,PRINTABLES,PAYPAL
+      - BUTTON_ORDER=GITHUB,INSTAGRAM,YOUTUBE,FACEBOOK,LINKED_IN,DOCKERHUB,PRINTABLES,PAYPAL,STEAM
       - GITHUB=https://robn.ch/github
       - INSTAGRAM=https://robn.ch/instagram
       - YOUTUBE=https://robn.ch/youtube
@@ -22,7 +22,7 @@ services:
       - DOCKERHUB=https://robn.ch/docker
       - PRINTABLES=https://robn.ch/printables
       - PAYPAL=https://robn.ch/paypal
-      - TIKTOK=https://robn.ch/tiktok
+      - STEAM=https://robn.ch/steam
       - CUSTOM_BUTTON_TEXT=Self Hosted:,PDF Tools,Draw
       - CUSTOM_BUTTON_URL=#,https://robn.ch/pdf,https://robn.ch/draw
       - CUSTOM_BUTTON_COLOR=#eb4034,#eb4034,#eb4034
