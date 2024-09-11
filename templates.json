@@ -112,8 +112,8 @@
       ],
       "env": [
         {
-          "name": "LANGS",
-          "label": "LANGS",
+          "name": "LANG",
+          "label": "LANG",
           "default": "de_DE"
         }
       ]
