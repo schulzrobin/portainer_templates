@@ -181,8 +181,10 @@
       "repository": {
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/gitlab/docker-stack.yml"
-      },
-      {
+      }
+      
+    },
+    {
       "type": 1,
       "title": "Ntfy",
       "name": "ntfy",
@@ -194,7 +196,6 @@
       ],
       "restart_policy": "always",
       "platform": "linux"
-    }
     }
   ]
 }
