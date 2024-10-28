@@ -194,7 +194,7 @@
       ],
       "restart_policy": "always",
       "platform": "linux"
-    },
+    }
     }
   ]
 }
