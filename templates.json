@@ -181,7 +181,20 @@
       "repository": {
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/gitlab/docker-stack.yml"
-      }
+      },
+      {
+      "type": 1,
+      "title": "Ntfy",
+      "name": "ntfy",
+      "description": "Send push notifications to your phone or desktop via PUT/POST",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+      "image": "binwiederhier/ntfy",
+      "ports": [
+        "10018:80/tcp"
+      ],
+      "restart_policy": "always",
+      "platform": "linux"
+    },
     }
   ]
 }
