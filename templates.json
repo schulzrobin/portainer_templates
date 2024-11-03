@@ -54,11 +54,11 @@
       "volumes": [
         {
           "container": "/var/www/baikal/config",
-          "bind": "/var/lib/docker/volumes/baikal_config"
+          "bind": "/var/lib/docker/volumes/baikal/config"
         },
         {
           "container": "/var/www/baikal/Specific",
-          "bind": "/var/lib/docker/volumes/baikal_data"
+          "bind": "/var/lib/docker/volumes/baikal/data"
         }
       ]
     },
