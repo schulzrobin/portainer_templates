@@ -31,7 +31,7 @@ services:
       - CUSTOM_BUTTON_ALT_TEXT=My Self Hosted online Services,Online PDF Tools, Online Flowchart Maker
       - CUSTOM_BUTTON_NAME=Self Hosted,PDF Tools,Draw
       - CUSTOM_BUTTON_ICON=fas file-alt,fas file-alt, fas chart-pie
-      - FOOTER=Robin Schulz © 2024
+      - FOOTER=Robin Schulz © 2025
       - SKIP_HEALTH_CHECK_LOGS=true
     ports:
       - 10016:3000
