@@ -196,6 +196,18 @@
       ],
       "restart_policy": "always",
       "platform": "linux"
+    },
+    {
+      "type": 3,
+      "title": "it-tools",
+      "name": "IT-Tools",
+      "description": "Collection of handy online tools for developers, with great UX as a web app.",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+      "repository": {
+        "url": "https://github.com/schulzrobin/portainer_templates",
+        "stackfile": "stacks/it-tools/docker-stack.yml"
+      }
+      
     }
   ]
 }
