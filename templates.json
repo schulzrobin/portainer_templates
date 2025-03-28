@@ -219,5 +219,6 @@
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/traefik/docker-stack.yml"
       }
+    }
   ]
 }
