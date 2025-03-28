@@ -206,8 +206,10 @@
       "repository": {
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/it-tools/docker-stack.yml"
-      },
-      {
+      }
+      
+    },
+    {
       "type": 3,
       "title": "Traefik",
       "name": "Traefik",
@@ -217,7 +219,5 @@
         "url": "https://github.com/schulzrobin/portainer_templates",
         "stackfile": "stacks/traefik/docker-stack.yml"
       }
-      
-    }
   ]
 }
